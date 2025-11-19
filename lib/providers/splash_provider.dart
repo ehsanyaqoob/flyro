@@ -1,6 +1,7 @@
 
 import 'package:flyro/export.dart';
 import 'package:flyro/features/screens/auth/signin_screen.dart';
+import 'package:flyro/features/screens/home/home_screen.dart';
 
 class SplashProvider with ChangeNotifier {
   bool _showLoader = false;
@@ -60,7 +61,7 @@ class SplashProvider with ChangeNotifier {
     if (context.mounted) {
       Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (context) => const SignInScreen()),
+        MaterialPageRoute(builder: (context) => const HomeScreen()),
         (route) => false,
       );
     }

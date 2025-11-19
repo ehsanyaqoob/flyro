@@ -263,7 +263,7 @@ class MyButton extends StatelessWidget {
     this.onTap,
     this.onTapWithParam,
     required this.buttonText,
-    this.height = 56.0,
+    this.height = 66.0,
     this.width,
     this.backgroundColor,
     this.fontColor,

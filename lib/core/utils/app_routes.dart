@@ -1,6 +1,9 @@
 import 'package:flyro/core/navigation/route_transition.dart';
 import 'package:flyro/export.dart ';
 import 'package:flyro/features/screens/auth/signin_screen.dart';
+import 'package:flyro/features/screens/home/menu_screen.dart';
+import 'package:flyro/features/screens/home/search_screen.dart';
+
 class AppLinks {
   static const splash = '/';
   static const onboarding = '/onboarding';
@@ -11,17 +14,23 @@ class AppLinks {
   static const forgot = '/forgot';
   static const home = '/home';
   static const setpin = '/setpin';
+  static const menu = '/menu';
+  static const serach = '/search';
 }
 
 class AppRoutes {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case AppLinks.splash:
-        return _buildRoute( SplashScreen(), RouteTransition.fade);
-    case AppLinks.signin:
-        return _buildRoute( SignInScreen(), RouteTransition.fade);
-   
+        return _buildRoute(SplashScreen(), RouteTransition.fade);
+      case AppLinks.signin:
+        return _buildRoute(SignInScreen(), RouteTransition.fade);
 
+      case AppLinks.menu:
+        return _buildRoute(MenuScreen(), RouteTransition.fade);
+
+      case AppLinks.serach:
+        return _buildRoute(SearchScreen(), RouteTransition.fade);
 
       default:
         return MaterialPageRoute(

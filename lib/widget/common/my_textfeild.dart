@@ -66,7 +66,7 @@ class MyTextField extends StatefulWidget {
     this.focusBorderColor,
     this.focusNode,
     this.radius = 22.0,
-    this.height = 70.0,
+    this.height = 66.0,
     this.width,
     this.validator,
     this.showPasswordToggle = false,
